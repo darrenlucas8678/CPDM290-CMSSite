@@ -1,0 +1,137 @@
+.clearfix:after, .row:after
+{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix, .row
+{
+	display: inline-block;
+}
+.clearfix, .row
+{
+	display: block;
+}
+
+.canvas
+{
+	margin: 0 auto;
+}
+
+.row
+{
+	position: relative;
+	margin-left: -20px;
+}
+.gu1 .row
+{
+	width: 240px;
+}
+.gu2 .row
+{
+	width: 480px;
+}
+.gu3 .row
+{
+	width: 720px;
+}
+.gu4 .row
+{
+	width: 960px;
+}
+
+.col
+{
+	padding-left: 20px;
+	float: left;
+	position: relative;
+}
+.gu1
+{
+	width: 220px;
+}
+.gu2
+{
+	width: 460px;
+}
+.gu3
+{
+	width: 700px;
+}
+.overall
+{
+	width: 940px;
+}
+
+#nav ul
+{
+	margin: 20px 0px;
+	list-style-type: none;
+	width: auto;
+	position: relative;
+	display: block;
+	height: 40px;
+	text-transform: uppercase;
+	font-size: 13px;
+	background: #70584b;
+	font-family: Helvetica,Arial,Verdana,sans-serif;
+}
+#nav li
+{
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	border-right: 1px solid #ffffff;
+}
+#nav li.nav-right
+{
+	float: right;
+}
+#nav li a
+{
+	display: block;
+	float: left;
+	color: #ffffff;
+	text-decoration: none;
+	line-height: 40px;
+	padding: 0px 20px;
+	height: 40px;
+}
+#nav li a:hover
+{
+	background: #3d3536;
+}
+#nav li a.active
+{
+	background: #a39a68;
+	color: #3d3536;
+}
+
+div.center
+{
+	margin: 0 auto;
+	position: relative;
+	width: 200px;
+}
+
+#header {
+	background-image: url(../images/naturebanner.jpg);	
+	width:auto;
+	height: 240px;
+	margin-bottom: 20px;
+}
+
+#header p
+{
+	float: left;
+	color: #3d3536;
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 240px;
+	padding-left: 20px;
+}
+

@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Content.master.cs" Inherits="Content" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>CPDM Capstone CMS-Darren Lucas</title>
+    <link href="styles/reset.css" rel="stylesheet" type="text/css" />
+    <link href="styles/layout.css" rel="stylesheet" type="text/css" />
+    <link href="styles/typography.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="canvas overall">
+    <asp:ContentPlaceHolder ID="navigation" runat="server">        
+        <div id="nav">
+            <ul>
+                <li>
+                    <asp:HyperLink ID="lnkHome" runat="server" NavigateUrl="~/Default.aspx" AccessKey="1"
+                        Text="Home" />
+                </li>
+                <li>
+                    <asp:HyperLink ID="lnkArticles" runat="server" NavigateUrl="~/Articles.aspx" AccessKey="2"
+                        Text="Articles" />
+                </li>
+                <li>
+                    <asp:HyperLink ID="lnkArchives" runat="server" NavigateUrl="~/Archive.aspx" AccessKey="3"
+                        Text="Archives" />
+                </li>
+                <li class="nav-right">
+                    <asp:HyperLink ID="lnkLogin" runat="server" NavigateUrl="~/Login.aspx" AccessKey="4"
+                        Text="Login" />
+                </li>
+            </ul>
+        </div>
+        <div id="header"><p>Nature Photography Articles</p></div>
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="content" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>

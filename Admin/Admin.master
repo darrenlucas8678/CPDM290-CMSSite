@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin_Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>CPDM Capstone CMS-Darren Lucas</title>
+    <link href="../styles/layout.css" rel="stylesheet" type="text/css" />
+    <link href="../styles/reset.css" rel="stylesheet" type="text/css" />
+    <link href="../styles/typography.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="canvas overall">
+    <asp:ContentPlaceHolder ID="navigation" runat="server">
+        <div id="nav">
+            <ul>
+                <li>
+                    <asp:HyperLink ID="lnkHome" runat="server" NavigateUrl="~/Default.aspx" AccessKey="1"
+                        Text="Home" />
+                </li>
+                <li>
+                    <asp:HyperLink ID="lnkAddArticle" runat="server" NavigateUrl="~/Admin/ArticleEditor.aspx" AccessKey="2"
+                        Text="Add Article" />
+                </li>
+                <li class="nav-right">
+                    <asp:HyperLink NavigateUrl="~/Login.aspx?Logout=1" ID="logout" runat="server" AccessKey="3">Logout</asp:HyperLink>
+                </li>
+            </ul>
+        </div>
+    </asp:ContentPlaceHolder>
+    <div class="container">
+        <div class="content">
+            <asp:ContentPlaceHolder ID="content" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="footer">
+            <hr />
+            <p>
+                © Darren Lucas 2013</p>
+        </div>
+    </div>
+</body>
+</html>
